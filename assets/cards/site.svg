@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#DCEFFB"/>
+      <stop offset="55%" stop-color="#E9F5FD"/>
+      <stop offset="100%" stop-color="#EFF8FE"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx="74%" cy="6%" r="72%">
+      <stop offset="0%" stop-color="#A6E2FB" stop-opacity="0.62"/>
+      <stop offset="48%" stop-color="#33BEF4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F8FCFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#bloom)"/>
+
+  <g stroke="#E3EEF6" stroke-width="1">
+    <path d="M0 90.5H800M0 180.5H800M0 270.5H800M0 360.5H800"/>
+    <path d="M100.5 0V450M200.5 0V450M300.5 0V450M400.5 0V450M500.5 0V450M600.5 0V450M700.5 0V450"/>
+  </g>
+
+  <rect x="0" y="248" width="800" height="2" fill="url(#line)"/>
+
+  <text x="400" y="212" text-anchor="middle"
+        font-family="'Space Grotesk', Inter, sans-serif" font-size="60" font-weight="700"
+        fill="#0B1F2E" letter-spacing="-1">Lumina</text>
+
+  <text x="400" y="286" text-anchor="middle"
+        font-family="Inter, sans-serif" font-size="14" font-weight="600"
+        fill="#9DB4C4" letter-spacing="5">SUBSTITUA ESTA IMAGEM</text>
+
+  <g fill="none" stroke="#33BEF4" stroke-width="2" opacity="0.7">
+    <path d="M32 32h26M32 32v26"/>
+    <path d="M768 32h-26M768 32v26"/>
+    <path d="M32 418h26M32 418v-26"/>
+    <path d="M768 418h-26M768 418v-26"/>
+  </g>
+</svg>
