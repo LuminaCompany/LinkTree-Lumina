@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Status
 
-Built and verified. Not a git repository yet.
+Built and verified. Git repo on `master`. Configured for Vercel (see Deploy).
 
 ## Goal
 
@@ -26,6 +26,12 @@ docs/referencia/  design-system tokens, original-vs-clone table, QA screenshots
 No `package.json`, no npm, no tests. Opening `index.html` by double-click works (`file://`-safe: classic scripts, no ES modules, no `fetch`).
 
 Local server, when wanted: `npx --yes serve .`
+
+## Deploy — Vercel
+
+Static, zero env vars. `vercel.json` sets framework `null`, no build/install, output `.`, security headers + CSP, and caching (`assets/` 1 day; everything else `must-revalidate` because filenames aren't hashed). `.vercelignore` keeps `docs/`, `CLAUDE.md`, `README.md` and the 1.4 MB root `Lumina_logo_sem_fundo.png` out of the deploy.
+
+CSP allows scripts only from `'self'` — never add inline `<script>` or a third-party script without updating `Content-Security-Policy` in `vercel.json`. `img-src` allows any `https:` because `config.js` accepts external image URLs.
 
 ## Editing rules
 

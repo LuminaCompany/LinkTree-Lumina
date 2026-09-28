@@ -1,0 +1,6 @@
+# Não vai para o deploy — só o site em si (index.html, style.css, config.js, app.js, assets/)
+docs/
+CLAUDE.md
+README.md
+Lumina_logo_sem_fundo.png
+.claude/
