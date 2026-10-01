@@ -72,20 +72,8 @@ const CONFIG = {
     {
       icone:  "instagram",
       rotulo: "Me siga no Instagram",          // legenda pequena embaixo do ícone
-      link:   "https://instagram.com/lumina",
+      link:   "https://www.instagram.com/luminacompanyia/",
       cor:    "#E1306C",
-    },
-    {
-      icone:  "youtube",
-      rotulo: "Me siga no YouTube",
-      link:   "https://youtube.com/@lumina",
-      cor:    "#FF0000",
-    },
-    {
-      icone:  "tiktok",
-      rotulo: "Me siga no TikTok",
-      link:   "https://tiktok.com/@lumina",
-      cor:    "#00F2FE",
     },
   ],
 
@@ -117,19 +105,6 @@ const CONFIG = {
      ========================================================================== */
   cards: [
 
-    // ── Card COM imagem de capa ──────────────────────────────────────────────
-    {
-      titulo:       "Diagnóstico gratuito de IA para a sua operação",
-      rodape:       "lumina.com.br",
-      iconeRodape:  "link",
-      imagem:       "assets/cards/site.svg",
-      alturaImagem: 150,
-      alturaMinima: 0,
-      link:         "https://lumina.com.br/",
-      novaAba:      true,
-      destaque:     false,
-    },
-
     // ── Card EM DESTAQUE (gradiente da marca) ────────────────────────────────
     {
       titulo:       "Fale com um especialista agora",
@@ -138,7 +113,7 @@ const CONFIG = {
       imagem:       "",
       alturaImagem: 150,
       alturaMinima: 0,
-      link:         "https://api.whatsapp.com/send/?phone=5500000000000&text=Ol%C3%A1%21+Quero+falar+com+a+Lumina.",
+      link:         "https://api.whatsapp.com/send/?phone=5531910007335&text=Ol%C3%A1%21+Quero+falar+com+a+Lumina.",
       novaAba:      true,
       destaque:     true,
     },
@@ -151,7 +126,7 @@ const CONFIG = {
       imagem:       "",
       alturaImagem: 150,
       alturaMinima: 0,
-      link:         "https://chat.whatsapp.com/SEU-LINK-AQUI",
+      link:         "https://chat.whatsapp.com/EPPt9PzRmloDbTzfNPvJY7",
       novaAba:      true,
       destaque:     false,
     },

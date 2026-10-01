@@ -31,6 +31,8 @@ Local server, when wanted: `npx --yes serve .`
 
 Static, zero env vars. `vercel.json` sets framework `null`, no build/install, output `.`, security headers + CSP, and caching (`assets/` 1 day; everything else `must-revalidate` because filenames aren't hashed). `.vercelignore` keeps `docs/`, `CLAUDE.md`, `README.md` and the 1.4 MB root `Lumina_logo_sem_fundo.png` out of the deploy.
 
+Domain: `luminacompanybr.com` (apex). `vercel.json` 301s `www.` → apex. `index.html` hardcodes absolute `og:image` / `og:url` / canonical on that domain — link previews need absolute URLs, so change them if the domain changes.
+
 CSP allows scripts only from `'self'` — never add inline `<script>` or a third-party script without updating `Content-Security-Policy` in `vercel.json`. `img-src` allows any `https:` because `config.js` accepts external image URLs.
 
 ## Editing rules
